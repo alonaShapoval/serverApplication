@@ -1,0 +1,18 @@
+INSERT INTO role (name) VALUES ('ADMIN'),('USER');
+INSERT INTO "user" (first_name, last_name, passport, email, password, role_id) VALUES('Alyona','Shapoval','TE123456','alyonashapoval@gmail.com','shapoval12',1);
+INSERT INTO "user" (first_name, last_name, passport, email, password, role_id) VALUES('Alyona','Shapoval','TE123456','alyonashapoval@gmail.com','shapoval12',2);
+select * from working_hours;
+INSERT INTO temperature(date, value) VALUES ('2018-02-10',18);
+INSERT INTO temperature(date, value) VALUES ('2018-04-10',20);
+INSERT INTO humidity(date, value) VALUES ('2018-02-10',14.5);
+INSERT INTO humidity(date, value) VALUES ('2018-10-10',80);
+INSERT INTO oxygen(date, value) VALUES ('2018-02-10',34);
+INSERT INTO oxygen(date, value) VALUES ('2019-02-10',189);
+INSERT INTO amount(date, value) VALUES ('2018-02-10',145);
+INSERT INTO amount(date, value) VALUES ('2018-02-10',233);
+INSERT INTO beehive(temp_id, humidity_id, oxygen_id, amount_id) VALUES (1,2,1,2);
+INSERT INTO beehive(temp_id, humidity_id, oxygen_id, amount_id) VALUES (2,1,2,1);
+INSERT INTO current_beehive(user_id, beehive_id, swarming) VALUES (1,1,true);
+INSERT INTO current_beehive(user_id, beehive_id, swarming) VALUES (2,2,true);
+INSERT INTO working_hours(date, hours, user_id) VALUES ('2018-02-10',8,2);
+INSERT INTO working_hours(date, hours, user_id) VALUES ('2019-02-10',6,3);
